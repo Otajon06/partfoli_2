@@ -1,20 +1,25 @@
 {
+  "homepage": "https://Otajon06.github.io/room",
   "name": "partfolio_2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "eslint-config-next": "^14.2.3",
     "firebase": "^10.11.1",
     "next": "14.2.3",
     "next-auth": "^4.24.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "18.3.2",
